@@ -8,7 +8,7 @@ export default function Home() {
       <header className="topbar">
         <div className="brand-lockup">
           <div className="brand-mark" aria-hidden="true"><span /><span /><span /></div>
-          <div><div className="brand-name">PULSE</div><div className="brand-sub">COGNITIVE LAB / 03</div></div>
+          <div><div className="brand-name">Manchine</div><div className="brand-sub">Be a Cognitive Human Machine</div></div>
         </div>
         <div className="topbar-status"><span className="status-dot" /> local session <span className="status-divider" /> no tracking</div>
       </header>
