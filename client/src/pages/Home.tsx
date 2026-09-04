@@ -15,19 +15,19 @@ export default function Home() {
 
       <div className="hub-shell">
         <section className="hub-hero">
-          <div className="eyebrow-row"><span className="eyebrow">THE PULSE INDEX</span><span className="eyebrow-line" /><span className="eyebrow-meta">02 TESTS / 00 TRACKING</span></div>
+          <div className="eyebrow-row"><span className="eyebrow">THE PULSE INDEX</span><span className="eyebrow-line" /><span className="eyebrow-meta">03 TESTS / 00 TRACKING</span></div>
           <div className="hub-hero-content">
             <div>
               <h1>Measure the way<br /><em>you respond.</em></h1>
               <p>Short, focused experiments for reaction, recall, and the tiny signals that make your mind your own.</p>
               <Link className="primary-button hub-cta" href="#tests">Explore the tests <span>↓</span></Link>
             </div>
-            <div className="hero-orbit" aria-hidden="true"><div className="hero-orbit-ring ring-a" /><div className="hero-orbit-ring ring-b" /><div className="orbit-core"><span>02</span><small>LIVE TESTS</small></div><i className="orbit-dot dot-a" /><i className="orbit-dot dot-b" /></div>
+            <div className="hero-orbit" aria-hidden="true"><div className="hero-orbit-ring ring-a" /><div className="hero-orbit-ring ring-b" /><div className="orbit-core"><span>03</span><small>LIVE TESTS</small></div><i className="orbit-dot dot-a" /><i className="orbit-dot dot-b" /></div>
           </div>
         </section>
 
         <section className="tests-section" id="tests">
-          <div className="section-heading"><div><span className="eyebrow">AVAILABLE PROTOCOLS</span><h2>Start with a signal.</h2></div><span className="section-note">01—02 / LOCAL ONLY</span></div>
+          <div className="section-heading"><div><span className="eyebrow">AVAILABLE PROTOCOLS</span><h2>Start with a signal.</h2></div><span className="section-note">01—03 / LOCAL ONLY</span></div>
           <div className="test-grid">
             <Link className="test-tile test-tile--reaction" href="/reaction-time">
               <div className="tile-top"><span className="tile-index">01</span><span className="tile-status">FOUNDATION</span></div>
@@ -38,6 +38,11 @@ export default function Home() {
               <div className="tile-top"><span className="tile-index">02</span><span className="tile-status tile-status--new">NEW / FEATURED</span></div>
               <div className="tile-visual memory-visual" aria-hidden="true">{Array.from({ length: 9 }, (_, index) => <span key={index} className={index === 4 || index === 7 ? "visual-cell visual-cell--lit" : "visual-cell"}>{index === 7 ? "2" : ""}</span>)}</div>
               <div className="tile-copy"><h3>Sequence Memory</h3><p>Remember an increasingly long pattern of button presses.</p><span className="tile-link">Run test <b>↗</b></span></div>
+            </Link>
+            <Link className="test-tile test-tile--number" href="/number-memory">
+              <div className="tile-top"><span className="tile-index">03</span><span className="tile-status tile-status--new">NEW / FOCUS</span></div>
+              <div className="tile-visual number-visual" aria-hidden="true"><span>7 4 2 9</span><i /><i /><i /></div>
+              <div className="tile-copy"><h3>Number Memory</h3><p>Remember the longest number you can, one digit at a time.</p><span className="tile-link">Run test <b>↗</b></span></div>
             </Link>
           </div>
         </section>
